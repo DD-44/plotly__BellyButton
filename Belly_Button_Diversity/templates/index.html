@@ -30,7 +30,7 @@
     .jumbotron {
         padding: 0rem;
         margin: 1rem;}
-        </style>
+    </style>
   </head>
 
   <body>
@@ -64,11 +64,6 @@
             </div>
           </div>
           <div class="col-md-7">
-            <!-- <div class="panel panel-primary">
-            <div class="panel-heading">
-            <div id="sample-metadata" class="panel-body"></div>
-            </div> -->
-
             <div id="table-area" class="">
               <h4 class="panel-title"><strong>Sample MetaData</strong></h4>
               <table id="sample-metadata" class="table table-striped">
@@ -79,7 +74,7 @@
                     <th class="table-head">Ethnicity</th>
                     <th class="table-head">Gender</th>
                     <th class="table-head">Location</th>
-                    <th class="table-head">WFreq</th>
+                    <th class="table-head">Wash. Freq</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
@@ -91,17 +86,18 @@
       </div>
       <div class="container">
         <div class="row">
-          <!-- <div class="col-md-3"></div> -->
-          <div class="col-md-12">
-              <hr>
+        <hr>
+          <div class="col-md-7">
           <h4><strong>Top Ten Belly Button OTUs</strong></h4>
             <div id="pie"> </div>
           </div>
+
+          <div class="col-md-5">
+            <h4><strong>Washing Frequency</strong></h4>
+            <div id="gauge"> </div> 
+          </div>
+        </div>
       </div>
-      </div>
-    <!-- <div class="col-md-5">
-          <div id="gauge"></div> -->
-    <!-- </div> -->
     <div class="row">
       <div class="col-md-12">
           <hr>
@@ -110,10 +106,9 @@
       </div>
     </div>
 
-    <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </body>
 </html>
